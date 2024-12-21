@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./lib",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+  }
+  // "include": ["src", "lib/controller", "lib/dto", "lib/entity", "lib/filter-provider", "lib/repository", "lib/service", "lib/type", "lib/index.ts", "lib/tenancy.constants.ts", "lib/tenancy.interface.ts", "lib/util.service.ts"]
+}

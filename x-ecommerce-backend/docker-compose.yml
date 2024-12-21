@@ -1,0 +1,49 @@
+version: '3'
+
+# networks:
+#   app-network:
+#     external: true
+
+services:
+  # x-ecom-app:
+  #   container_name: x-ecom-app
+  #   image: x-ecom-app
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   depends_on:
+  #     - mongo
+  #   environment:
+  #     MONGO_URI: ${MONGO_URI}
+  #   ports:
+  #     - '${PORT}:${PORT}'
+  #   networks:
+  #     - app-network
+
+  # mongo:
+  #   image: mongo
+  #   volumes:
+  #     - mongo-data:/data/db
+  #   networks:
+  #     - app-network
+
+  # nginx:
+  #   image: nginx:latest
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - x-ecom-app
+  #   networks:
+  #     - app-network
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+  redis:
+    image: redis
+    # networks:
+    #   - app-network
+    ports:
+      - "6379:6379"
+
+
+# volumes:
+#   mongo-data:
