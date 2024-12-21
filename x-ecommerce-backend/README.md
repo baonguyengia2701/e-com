@@ -55,9 +55,6 @@ Config [Unit Test Report](https://stackoverflow.com/questions/24825860/how-to-ge
 }
 ```
 
-## Stay in touch
-
-- Author - [Ryan](https://github.com/ryan2kptit)
 
 ## License
 
